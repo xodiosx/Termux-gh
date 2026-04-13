@@ -11,6 +11,8 @@ on:
 jobs:
   # This is what is currently necessary to make termux-docker work with GHA.
   working:
+    permissions:
+     contents: write
     strategy:
       matrix:
         include:
